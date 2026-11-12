@@ -1,0 +1,20 @@
+:root{--fundo:#05070D;--sup:#0B1220;--borda:#1B2A44;--azul:#3D9BFF;--azulc:#7CBBFF;--cab:#0E2140;--txt:#FFFFFF;--sec:#A9B8D0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--sec);font:16px/1.7 Inter,system-ui,-apple-system,sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+.rotulo{font:500 12px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:2px;color:var(--azulc)}
+h1{font:700 30px/1.2 "Chakra Petch",system-ui,sans-serif;color:var(--txt);margin:8px 0 4px}
+h2{font:600 19px/1.3 "Chakra Petch",system-ui,sans-serif;color:var(--txt);margin:32px 0 8px;padding-top:12px;border-top:1px solid var(--borda)}
+.versao{font:500 13px "JetBrains Mono",ui-monospace,monospace;color:#8A9AB5}
+.janela{border:1px solid var(--azul);border-radius:6px;overflow:hidden;margin:20px 0}
+.janela .cab{background:var(--cab);color:#D6E6FF;font:500 12px "JetBrains Mono",ui-monospace,monospace;letter-spacing:1px;padding:8px 12px}
+.janela .corpo{background:var(--sup);padding:12px 14px}
+strong{color:var(--txt);font-weight:600}
+a{color:var(--azulc)}
+ul{padding-left:20px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th,td{text-align:left;vertical-align:top;padding:8px;border-bottom:1px solid var(--borda)}
+th{color:var(--txt);font-weight:600}
+.pendente{background:#1F0A10;color:#FF8A96;padding:0 4px;border-radius:3px}
+.aviso{border:1px solid #FF4D5E;background:#1F0A10;color:#FFC2C9;border-radius:6px;padding:10px 12px;font-size:14px;margin:16px 0}
+@media (max-width:520px){table{font-size:13px}th,td{padding:6px 4px}}
