@@ -10,14 +10,15 @@
 <main>
 <div class="rotulo">IRISEN</div>
 <h1>Política de Privacidade</h1>
-<div class="versao">Versão 1.0 · em vigor desde 13 de novembro de 2026</div>
+<div class="versao">Versão 1.1 · em vigor desde 14 de novembro de 2026</div>
 
 <div class="janela">
   <div class="cab">RESUMO</div>
   <div class="corpo">
     <ul>
       <li>Coletamos só o necessário para o app funcionar: sua conta, sua ficha e o registro das suas missões.</li>
-      <li>Seus dados ficam no seu iPhone, com uma cópia de segurança no nosso servidor, ligada à sua conta.</li>
+      <li>Seus dados ficam no seu iPhone. Nesta versão de testes ainda não há cópia no nosso servidor; ela chega numa próxima versão, ligada à sua conta.</li>
+      <li>Para medir o teste, o app envia dados de uso <strong>anônimos</strong> (por exemplo, "o dia 5 foi cumprido"), nunca o seu nome, e-mail ou dados de saúde. Dá para desligar.</li>
       <li>Não vendemos dados, não mostramos anúncios e não rastreamos você em outros apps ou sites.</li>
       <li>Os dados de sono lidos do Apple Saúde só servem para validar a missão de sono.</li>
       <li>Você pode excluir a sua conta e todos os seus dados dentro do próprio app, a qualquer momento.</li>
@@ -38,6 +39,7 @@
   <tr><td><strong>Diário de eventos</strong></td><td>Missões concluídas ou não, água registrada, horário de sono, treinos (exercícios, cargas e repetições), compras na loja do jogo, mudanças de configuração.</td><td>Calcular XP, nível, Rank, sequências, moedas e relatórios.</td></tr>
   <tr><td><strong>Sono do Apple Saúde</strong></td><td>Somente a "Análise do Sono" (horários dormindo ou na cama), se você permitir.</td><td>Validar a missão de sono automaticamente.</td></tr>
   <tr><td><strong>Imagens que você escolher</strong></td><td>Fotos da galeria usadas para personalizar a aparência do app.</td><td>Mostrar a personalização. Ficam só no iPhone.</td></tr>
+  <tr><td><strong>Dados de uso anônimos</strong></td><td>Eventos como "app aberto no dia 3", "dia 5 cumprido", "Rank D alcançado", resposta ao pedido de avisos e como você conheceu o app. Veja o item 6-A.</td><td>Medir se o app ajuda as pessoas a manter os hábitos durante o teste.</td></tr>
   <tr><td><strong>Aceites</strong></td><td>Versão desta política e dos Termos que você aceitou, e a data.</td><td>Comprovar o seu consentimento.</td></tr>
 </table>
 <p><strong>Não coletamos:</strong> localização, contatos, histórico de navegação, identificador de publicidade, orientação sexual nem dados de pagamento. Também não lemos o seu histórico de Tempo de Uso: a missão de tempo de tela é confirmada por você.</p>
@@ -56,13 +58,15 @@
 <h2>5. Onde os dados ficam</h2>
 <ul>
   <li><strong>No seu iPhone:</strong> é a cópia principal. O app funciona mesmo sem internet. Ela também entra no backup do iCloud do aparelho, se você usa esse backup.</li>
-  <li><strong>No nosso servidor:</strong> uma cópia de segurança do diário e das configurações, ligada à sua conta, para você não perder o progresso se trocar ou perder o iPhone. O servidor é operado pela Supabase, em data center localizado em <span class="pendente">[REGIÃO DO SERVIDOR · recomendado: São Paulo]</span>.</li>
+  <li><strong>No nosso servidor (numa próxima versão):</strong> uma cópia de segurança do diário e das configurações, ligada à sua conta, para você não perder o progresso se trocar ou perder o iPhone. O servidor será operado pela Supabase, em data center em São Paulo (Brasil). <strong>Na versão de testes atual ainda não existe essa cópia:</strong> os dados ficam só no iPhone. Quando ela entrar, esta política será atualizada e o app pedirá um novo aceite.</li>
+  <li><strong>Dados de uso anônimos:</strong> ficam com a TelemetryDeck, na União Europeia (veja o item 6-A).</li>
 </ul>
 
 <h2>6. Com quem compartilhamos</h2>
 <p>Não vendemos, alugamos nem trocamos seus dados. Eles só passam por empresas que nos prestam serviço (operadores), e apenas no necessário:</p>
 <ul>
-  <li><strong>Supabase:</strong> hospedagem do servidor, login e cópia de segurança.</li>
+  <li><strong>Supabase:</strong> hospedagem do servidor, login e cópia de segurança (numa próxima versão).</li>
+  <li><strong>TelemetryDeck</strong> (empresa da Alemanha): recebe os dados de uso anônimos do item 6-A, em servidores na União Europeia. É uma transferência internacional de dados, feita nos termos do art. 33 da LGPD, com as garantias de proteção do contrato e da lei europeia (GDPR) a que o operador está sujeito.</li>
   <li><strong>Apple e Google:</strong> somente se você escolher entrar com uma dessas contas. Eles nos informam seu e-mail, nome e um identificador; o uso que eles fazem dos dados segue as políticas deles. Com a Apple, você pode escolher ocultar o seu e-mail real.</li>
   <li><strong>Apple (TestFlight e App Store):</strong> a distribuição do app e relatórios de falhas que você decidir compartilhar com o desenvolvedor.</li>
   <li><strong>Autoridades:</strong> somente quando a lei ou uma ordem judicial exigir.</li>
@@ -70,12 +74,29 @@
 <p>Os dados do Apple Saúde nunca são usados para publicidade, nunca são vendidos e nunca são compartilhados com terceiros para outros fins.</p>
 <p>Se no futuro o app passar a usar inteligência artificial (por exemplo, chat ou análise de fotos de refeições), esta política será atualizada antes e você será avisado dentro do app.</p>
 
+<h2>6-A. Dados de uso anônimos (telemetria)</h2>
+<p>Durante o teste, queremos saber se o app ajuda de verdade: quantas pessoas ainda usam no dia 21, quem volta depois de falhar um dia, quantos se interessam por cada plano. Para isso, o app envia à TelemetryDeck alguns eventos <strong>sem identificar você</strong>:</p>
+<ul>
+  <li>app aberto (o dia do programa);</li>
+  <li>missão registrada (o dia e o tipo: fixa, principal ou livre);</li>
+  <li>dia fechado (cumprido, salvo pelo escudo, não cumprido ou descanso, e quantas missões foram feitas);</li>
+  <li>volta depois de um dia não cumprido;</li>
+  <li>Rank alcançado e contrato selado (o modo e os tipos de missão);</li>
+  <li>resposta ao pedido de avisos;</li>
+  <li>como você conheceu o app (amigo ou igreja, redes sociais, outro), se quiser responder;</li>
+  <li>planos vistos e tocados na tela de assinatura.</li>
+</ul>
+<p><strong>Nunca enviamos:</strong> nome, e-mail, data de nascimento, idade, peso, altura, horas de sono, água, respostas do diagnóstico, hábitos, nome do pet, textos que você escreveu nem a sua localização. A TelemetryDeck recebe também informações técnicas gerais (versão do app e do iOS, modelo do aparelho, idioma) e um identificador do aparelho transformado de forma irreversível (hash), que não revela quem você é e não é usado para publicidade nem para rastrear você em outros apps.</p>
+<p>Nada é enviado antes de você aceitar esta política, e o perfil de testes interno não envia nada. Você pode desligar o envio a qualquer momento em <strong>Ajustes (engrenagem da aba Status) → Dados → Dados de uso anônimos</strong>.</p>
+<p>Base legal: legítimo interesse em melhorar o app (art. 7º, IX, da LGPD), com dados anônimos e a opção de desligar.</p>
+
 <h2>7. Por quanto tempo guardamos</h2>
 <ul>
   <li>Enquanto a sua conta existir.</li>
   <li>Ao excluir a conta, os dados do servidor são apagados na hora; cópias técnicas de segurança do provedor são eliminadas em até 30 dias.</li>
   <li>O registro dos aceites pode ser mantido pelo prazo necessário para cumprir obrigações legais.</li>
   <li>Os dados no seu iPhone ficam até você apagar o app.</li>
+  <li>Os dados de uso anônimos ficam na TelemetryDeck pelo prazo de retenção do serviço e servem só para estatísticas do app.</li>
 </ul>
 
 <h2>8. Seus direitos</h2>
